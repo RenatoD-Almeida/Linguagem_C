@@ -12,22 +12,33 @@ struct Idade{
 struct Pessoa{
 	char nome[30];
 	struct Idade idade;
-}p1 = {"Renato Mateus"};
+}p1;
 
 	
 int main(){
 	
 //declaração de função
+struct Pessoa cadastrar(void);
 void imprimir_pessoa(struct Pessoa p);
-struct Idade cadastrar_data_nasc(void);
 
 
 //Pograma...
-p1.idade = cadastrar_data_nasc();
+p1 = cadastrar();
 imprimir_pessoa(p1);	
 	
 	return 0;
 }
+
+struct Pessoa cadastrar(void){
+	struct Idade cadastrar_data_nasc(void);
+	struct Pessoa p;
+	printf("Digite o nome: ");
+	fgets(p.nome, 30, stdin); fflush(stdin);
+	p.idade = cadastrar_data_nasc();
+	return p;
+	
+}
+
 
 struct Idade cadastrar_data_nasc(void){
 	struct Idade p1_data;
