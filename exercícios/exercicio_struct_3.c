@@ -6,7 +6,7 @@ struct Idade{
 	int mes;
 	int ano;
 	
-}p1_data;
+};
 
 
 struct Pessoa{
