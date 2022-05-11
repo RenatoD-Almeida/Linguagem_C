@@ -8,7 +8,6 @@ struct Idade{
 	
 };
 
-
 struct Pessoa{
 	char nome[30];
 	struct Idade idade;
@@ -17,12 +16,12 @@ struct Pessoa{
 	
 int main(){
 	
-//declaração de função
+//**********  declaração de função **********
 struct Pessoa cadastrar(void);
 void imprimir_pessoa(struct Pessoa p);
 
 
-//Pograma...
+//********** Pograma **********
 p1 = cadastrar();
 imprimir_pessoa(p1);	
 	
