@@ -11,5 +11,7 @@ int main(){
 	printf("\n\n\t%p", palavra);
 	printf("\n\t%p", &palavra);
 	printf("\n\t%p", &palavra[0]);
+	
+	free(ptr);
 	return 0;
 }
